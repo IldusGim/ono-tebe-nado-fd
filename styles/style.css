@@ -8,23 +8,15 @@
 
 .header__links-list {
   display: flex;
-  gap: 12px;
+  gap: 32px;
 }
 
 .header__links-list-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
   list-style: none;
-}
-
-.header__links-list-item::before {
-  content: "\25E6";
-  font-size: 14px;
-}
-
-.header__links-list-item_no-bullit::before {
-  display: none;
 }
 
 .header__link {
@@ -138,9 +130,6 @@
 
 .lots {
   margin-top: 180px;
-}
-
-.section-horizontal-padding {
   padding: 0 24px;
 }
 
@@ -208,9 +197,6 @@
 
 .card__text {
   z-index: 1;
-}
-
-.text-caption {
   font-size: 20px;
   line-height: 1.2;
 }
@@ -225,6 +211,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 9px 25px;
   margin-top: 154px;
+  padding: 0 24px;
 }
 
 .about__logo {
@@ -257,6 +244,8 @@
   grid-column: 2/4;
   grid-row: 2;
   gap: 24px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .footer {
@@ -300,4 +289,6 @@
 
 .footer__social-icon {
   display: block;
+  width: 48px;
+  height: 48px;
 }
